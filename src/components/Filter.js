@@ -5,7 +5,7 @@ class Filter extends Component {
     return (
       <div className="filter">
         <label htmlFor="title-filter">Title: </label>
-        <input id="title-filter" type="text" />
+        <input id="title-filter" onChange={(event) => {this.props.filterSongs(event)}} type="text" />
       </div>
     );
   }
